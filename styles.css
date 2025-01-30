@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #FFD700;
+}
+
+.hero-content {
+    padding: 180px 20px 100px;
+    text-align: center;
+    background: url('https://t3.ftcdn.net/jpg/08/52/84/58/240_F_852845844_AkM1T29RijeQVvVvMkr6rxhEt6lDxovk.jpg') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.cta-button {
+    background: #FFD700;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #ffcc00;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+.service-cards, .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card, .feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover, .feature:hover {
+    background: rgba(255, 215, 0, 0.2);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+}
