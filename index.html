@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketUp - AI Powered Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #FFD700;
+        }
+
+        .hero-content {
+            padding: 180px 20px 100px;
+            text-align: center;
+            background: url('https://t3.ftcdn.net/jpg/08/52/84/58/240_F_852845844_AkM1T29RijeQVvVvMkr6rxhEt6lDxovk.jpg') no-repeat center center/cover;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: #FFD700;
+            border: none;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ffcc00;
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .service-cards, .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card, .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover, .feature:hover {
+            background: rgba(255, 215, 0, 0.2);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MarketUp 🚀</div>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#features">AI Features</a>
+            <a href="#contact">Contact</a>
+            <button class="cta-button">Get Started</button>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero-content">
+        <h1>Supercharge Your Digital Presence with AI! ✨</h1>
+        <p>Leverage cutting-edge AI tools & expert strategies to elevate your brand.</p>
+        <button class="cta-button">Start Free Trial</button>
+    </section>
+    
+    <section id="about" class="section">
+        <h2>Why Choose MarketUp?</h2>
+        <p>We use AI-powered solutions to help businesses maximize their digital marketing impact effortlessly.</p>
+    </section>
+    
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">🎨 Stunning Graphic Design</div>
+            <div class="card">💻 High-Performance Web Development</div>
+            <div class="card">📈 SEO & Growth Optimization</div>
+        </div>
+    </section>
+    
+    <section id="features" class="section">
+        <h2>AI-Powered Features 🤖</h2>
+        <div class="feature-grid">
+            <div class="feature">🎯 Precision Ad Targeting</div>
+            <div class="feature">📊 Data-Driven Performance Insights</div>
+            <div class="feature">🔍 Intelligent SEO Automation</div>
+            <div class="feature">🖌️ AI-Powered Design Assistant</div>
+            <div class="feature">🚀 Conversion Optimization</div>
+            <div class="feature">📝 Smart Campaign Automation</div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section contact-section">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message 🚀</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MarketUp | AI-Powered Growth 🚀</p>
+            <nav class="footer-nav">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
